@@ -1,3 +1,4 @@
+"use client"
 import { HugeiconsIcon } from "@hugeicons/react";
 import { Folder01Icon, Folder02Icon } from "@hugeicons/core-free-icons";
 import Image from "next/image";

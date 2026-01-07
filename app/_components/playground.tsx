@@ -1,3 +1,4 @@
+"use client"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Label } from "@/components/ui/label"
 import { FileTree } from "./file-tree"
@@ -52,7 +53,7 @@ export const Playground = () => {
   }, [yearBased, folders]);
 
   return (
-    <section id="playground" className="py-16 border-b border-primary/5">
+    <section id="playground" className="py-16 pb-24 border-b border-primary/5">
       <h2 className="text-3xl text-muted-foreground/50 font-bold text-center mb-12">Try SSS Structure</h2>
       <div className="grid md:grid-cols-2 gap-8 items-start">
         <div className="space-y-4">
@@ -77,33 +78,33 @@ export const Playground = () => {
           <p className="text-center text-muted-foreground text-sm">Additional options are currently in development.</p>
 
           <h3 className="text-xl font-semibold">Installation</h3>
-           <CodeSnippet
-             code={linuxCommand}
-             language="bash"
-             title="Linux/Mac Installation"
-           />
+          <CodeSnippet
+            code={linuxCommand}
+            language="bash"
+            title="Linux/Mac Installation"
+          />
 
-           <CodeSnippet
-             code={windowsCommand}
-             language="powershell"
-             title="Windows Installation"
-           />
+          <CodeSnippet
+            code={windowsCommand}
+            language="powershell"
+            title="Windows Installation"
+          />
         </div>
         <div className="space-y-4 h-full">
           <div className="flex justify-between items-center">
             <h3 className="text-xl font-semibold">Folder Tree</h3>
-             <CreateFolder
-               onAddFolder={(name) => setFolders([...folders, name])}
-               onUpdate={(newName) => {
-                 if (editingFolder) {
-                   setFolders(folders.map(f => f === editingFolder ? newName : f));
-                   setEditingFolder(null);
-                 }
-               }}
-               defaultValue={editingFolder || undefined}
-             />
+            <CreateFolder
+              onAddFolder={(name) => setFolders([...folders, name])}
+              onUpdate={(newName) => {
+                if (editingFolder) {
+                  setFolders(folders.map(f => f === editingFolder ? newName : f));
+                  setEditingFolder(null);
+                }
+              }}
+              defaultValue={editingFolder || undefined}
+            />
           </div>
-           <FileTree treeData={treeData} onDelete={(name) => setFolders(folders.filter(f => f !== name))} onEdit={setEditingFolder} />
+          <FileTree treeData={treeData} onDelete={(name) => setFolders(folders.filter(f => f !== name))} onEdit={setEditingFolder} />
         </div>
       </div>
 

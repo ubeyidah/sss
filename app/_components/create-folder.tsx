@@ -25,9 +25,10 @@ export function CreateFolder({ onAddFolder, onUpdate, defaultValue }: CreateFold
   const [newFolderName, setNewFolderName] = useState(defaultValue || "");
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setNewFolderName(defaultValue || "");
     if (defaultValue) {
-      setNewFolderName(defaultValue); // eslint-disable-line react-hooks/set-state-in-effect
-      setDialogOpen(true); // eslint-disable-line react-hooks/set-state-in-effect
+      setDialogOpen(true);
     }
   }, [defaultValue]);
 
@@ -57,11 +58,11 @@ export function CreateFolder({ onAddFolder, onUpdate, defaultValue }: CreateFold
       <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
         <DialogContent>
           <DialogHeader>
-             <DialogTitle>{defaultValue ? "Edit Folder" : "Add Folder"}</DialogTitle>
-             <DialogDescription>
-               {defaultValue ? "Update the name for the folder." : "Enter the name for the new folder."}
-             </DialogDescription>
-           </DialogHeader>
+            <DialogTitle>{defaultValue ? "Edit Folder" : "Add Folder"}</DialogTitle>
+            <DialogDescription>
+              {defaultValue ? "Update the name for the folder." : "Enter the name for the new folder."}
+            </DialogDescription>
+          </DialogHeader>
           <div className="space-y-2">
             <label htmlFor="folder-name" className="text-sm font-medium">
               Folder Name
@@ -84,7 +85,7 @@ export function CreateFolder({ onAddFolder, onUpdate, defaultValue }: CreateFold
             >
               Cancel
             </Button>
-             <Button onClick={handleCreate}>{defaultValue ? "Update" : "Create"}</Button>
+            <Button onClick={handleCreate}>{defaultValue ? "Update" : "Create"}</Button>
           </DialogFooter>
         </DialogContent>
       </Dialog>
