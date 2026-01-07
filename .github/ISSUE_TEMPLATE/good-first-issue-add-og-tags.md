@@ -74,6 +74,7 @@ export const metadata: Metadata = {
 ### Notes:
 
 - The logo image exists at `/public/logo.png` and will be accessible at `https://sss-cli.vercel.app/logo.png`
+- The dimensions shown (1200x630) are the recommended Open Graph image size. The actual logo may have different dimensions, which is acceptable for a first implementation
 - You may want to create a dedicated Open Graph image (1200x630px) for better social media previews in the future, but using the logo is a good start
 - The `twitter` metadata ensures proper display on X (formerly Twitter)
 

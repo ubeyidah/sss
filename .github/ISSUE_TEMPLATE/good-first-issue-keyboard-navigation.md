@@ -59,6 +59,7 @@ In the `create-folder.tsx` component, locate the Input field that looks like thi
   onChange={(e) => setNewFolderName(e.target.value)}
   onKeyDown={(e) => {
     if (e.key === 'Enter') {
+      e.preventDefault();
       handleCreate();
     }
   }}
@@ -66,6 +67,8 @@ In the `create-folder.tsx` component, locate the Input field that looks like thi
   className="capitalize"
 />
 ```
+
+**Note:** The `e.preventDefault()` prevents the default form submission behavior, and the existing `handleCreate()` function already includes validation to reject empty or whitespace-only input.
 
 ### Testing your changes:
 
