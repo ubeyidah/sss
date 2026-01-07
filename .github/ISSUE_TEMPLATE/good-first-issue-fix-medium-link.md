@@ -42,7 +42,7 @@ Learn more about the philosophy: [Medium Article](https://medium.com/@ubeyidah/h
 
 ### What needs to be changed:
 
-In `/README.md` line 39, replace:
+In `/README.md`, locate the Philosophy section near the end of the file. Replace:
 ```markdown
 Learn more about the philosophy: [Medium Article](https://medium.com)
 ```

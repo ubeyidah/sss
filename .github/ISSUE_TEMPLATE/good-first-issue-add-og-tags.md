@@ -92,7 +92,7 @@ export const metadata: Metadata = {
 
 - [Next.js Metadata API](https://nextjs.org/docs/app/api-reference/functions/generate-metadata)
 - [Open Graph Protocol](https://ogp.me/)
-- [Twitter Cards Documentation](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards)
+- [Twitter/X Cards Overview](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup)
 - [Open Graph Image Dimensions](https://iamturns.com/open-graph-image-size/)
 
 ## 💡 Acceptance Criteria
