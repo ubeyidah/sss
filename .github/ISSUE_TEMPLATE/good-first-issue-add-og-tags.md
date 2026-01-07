@@ -67,7 +67,7 @@ export const metadata: Metadata = {
 ### What needs to be changed:
 
 1. Open `/app/layout.tsx`
-2. Locate the `metadata` export (lines 17-20)
+2. Locate the `metadata` export
 3. Add the `openGraph` and `twitter` properties as shown above
 4. Make sure the URLs point to the correct production domain
 
@@ -85,8 +85,8 @@ export const metadata: Metadata = {
 4. Search for "og:" to verify the Open Graph tags are present
 5. Use online tools to test:
    - [OpenGraph.xyz](https://www.opengraph.xyz/)
-   - [Twitter Card Validator](https://cards-dev.twitter.com/validator)
    - [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/)
+6. You can also test locally by viewing the page source
 
 ## 📚 Helpful Resources
 

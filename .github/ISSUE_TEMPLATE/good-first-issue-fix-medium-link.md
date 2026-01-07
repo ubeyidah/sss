@@ -16,7 +16,7 @@ Update the Medium article link in README.md to point to the complete article URL
 
 ## 📍 Location
 
-File: `/README.md` (line 39)
+File: `/README.md`
 
 ## 🔍 Current Code
 
@@ -37,7 +37,7 @@ Learn more about the philosophy: [Medium Article](https://medium.com/@ubeyidah/h
 ### Where to find the correct URL:
 
 1. The correct URL is already used in the codebase! 
-2. Check `/app/_components/philosophy.tsx` at line 20
+2. Check `/app/_components/philosophy.tsx`
 3. The full URL is: `https://medium.com/@ubeyidah/how-sss-single-source-structure-ended-my-project-organization-nightmare-c3edbd6f2774`
 
 ### What needs to be changed:

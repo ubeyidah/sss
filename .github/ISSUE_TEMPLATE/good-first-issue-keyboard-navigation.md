@@ -38,7 +38,7 @@ File: `/app/_components/create-folder.tsx`
 
 ### What needs to be changed:
 
-In the `create-folder.tsx` component (lines 66-77), the Input field currently looks like this:
+In the `create-folder.tsx` component, locate the Input field that looks like this:
 
 ```tsx
 <Input
@@ -80,7 +80,7 @@ In the `create-folder.tsx` component (lines 66-77), the Input field currently lo
 
 ## 📚 Helpful Resources
 
-- [React onKeyDown Event](https://react.dev/reference/react-dom/components/input#responding-to-key-events)
+- [React Documentation - Handling Events](https://react.dev/learn/responding-to-events)
 - [KeyboardEvent.key Documentation](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key)
 - Project Contributing Guide: [CONTRIBUTING.md](../../CONTRIBUTING.md)
 
