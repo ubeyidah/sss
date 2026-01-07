@@ -2,6 +2,14 @@
 
 Thanks for your interest in contributing to SSS!
 
+## Finding an Issue to Work On
+
+Looking for a place to start? Check out our [good first issues](https://github.com/ubeyidah/sss/labels/good%20first%20issue)! These are beginner-friendly tasks with detailed instructions.
+
+We also have issue templates to help you report bugs or suggest features:
+- 🐛 [Bug Report](.github/ISSUE_TEMPLATE/bug_report.md)
+- 💡 [Feature Request](.github/ISSUE_TEMPLATE/feature_request.md)
+
 ## Development Setup
 
 1. Clone the repository
