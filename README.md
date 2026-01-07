@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SSS (Single Source Structure)
 
-## Getting Started
+One organized workspace where everything has a place.
 
-First, run the development server:
+## What is SSS?
 
+SSS is a standardized folder structure for organizing all your work. It eliminates decision fatigue about where to place new projects by providing a predictable structure across Personal, Work, OpenSource, Playgrounds, and Categories.
+
+## How to Use
+
+### Web Playground
+
+Visit [https://sss-cli.vercel.app](https://sss-cli.vercel.app) to customize and preview your workspace structure. Add custom folders, enable year-based organization, and get installation commands that match your preferences.
+
+### CLI Installation
+
+**Linux/Mac:**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+curl -fsSL https://sss-cli.vercel.app/scripts/install.sh | bash -s -- --year-based "Personal" "Work" "OpenSource" "Playground" "Courses"
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Windows (PowerShell):**
+```powershell
+irm https://sss-cli.vercel.app/scripts/install.ps1 | iex -Args -YearBased -Folders "Personal,Work,OpenSource,Playground,Courses"
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Standardized Structure**: Consistent organization across all projects
+- **Custom Folders**: Add, edit, or remove folder categories
+- **Year-Based Organization**: Optional grouping by year (e.g., Personal/2026/)
+- **Cross-Platform**: Works on Linux, macOS, and Windows
+- **Interactive Preview**: Visualize your structure before installation
 
-## Learn More
+## Philosophy
 
-To learn more about Next.js, take a look at the following resources:
+Clarity creates focus. When your workspace has one clear structure, you stop wasting time deciding where things go and start spending that time building.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Learn more about the philosophy: [Medium Article](https://medium.com)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Tech Stack
 
-## Deploy on Vercel
+- **Web**: Next.js 16, React 19, Tailwind CSS 4, shadcn/ui
+- **CLI**: Bash (Unix) and PowerShell (Windows) scripts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Credits
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Created by [Ubeyidah](https://github.com/ubeyidah)
+
+## License
+
+MIT License - see [LICENSE](LICENSE) for details
