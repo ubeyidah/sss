@@ -35,6 +35,22 @@ export const Playground = () => {
     return baseTree;
   }, [folders, yearBased, currentYear]);
 
+  const linuxCommand = useMemo(() => {
+    const base = "https://sss-cli.vercel.app";
+    let cmd = `curl -fsSL ${base}/scripts/install.sh | bash -s --`;
+    if (yearBased) cmd += ' --year-based';
+    folders.forEach(folder => cmd += ` "${folder}"`);
+    return cmd;
+  }, [yearBased, folders]);
+
+  const windowsCommand = useMemo(() => {
+    const base = "https://sss-cli.vercel.app";
+    let cmd = `irm ${base}/scripts/install.ps1 | iex -Args`;
+    if (yearBased) cmd += ' -YearBased';
+    cmd += ` -Folders "${folders.join(',')}"`;
+    return cmd;
+  }, [yearBased, folders]);
+
   return (
     <section id="playground" className="py-16 border-b border-primary/5">
       <h2 className="text-3xl text-muted-foreground/50 font-bold text-center mb-12">Try SSS Structure</h2>
@@ -61,17 +77,17 @@ export const Playground = () => {
           <p className="text-center text-muted-foreground text-sm">Additional options are currently in development.</p>
 
           <h3 className="text-xl font-semibold">Installation</h3>
-          <CodeSnippet
-            code={`curl -fsSL https://raw.githubusercontent.com/yourusername/sss/main/install.sh | bash -s -- --year-based`}
-            language="bash"
-            title="Linux/Mac Installation"
-          />
+           <CodeSnippet
+             code={linuxCommand}
+             language="bash"
+             title="Linux/Mac Installation"
+           />
 
-          <CodeSnippet
-            code={`PowerShell -ExecutionPolicy Bypass -File install.ps1 -YearBased`}
-            language="powershell"
-            title="Windows Installation"
-          />
+           <CodeSnippet
+             code={windowsCommand}
+             language="powershell"
+             title="Windows Installation"
+           />
         </div>
         <div className="space-y-4 h-full">
           <div className="flex justify-between items-center">
