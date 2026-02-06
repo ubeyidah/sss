@@ -23,7 +23,7 @@ export function SharePanel() {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch {
-      // fallback: select text
+      // Clipboard API may be unavailable in insecure contexts; silently ignore
     }
   };
 
@@ -42,7 +42,7 @@ export function SharePanel() {
               JSON.stringify({ folders, yearBased }, null, 2)
             );
           } catch {
-            // fallback
+            // Clipboard API may be unavailable in insecure contexts; silently ignore
           }
         }}
         className="gap-1.5"
