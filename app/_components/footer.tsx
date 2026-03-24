@@ -9,7 +9,7 @@ export function Footer() {
         <p className="text-muted-foreground">
           Created by{" "}
           <a
-            href="https://github.com/ubeyidah"
+            href="https://ubeyidah.tech"
             target="_blank"
             className="hover:text-foreground transition-colors"
           >
