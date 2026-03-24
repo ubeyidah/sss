@@ -17,7 +17,7 @@ export function Philosophy() {
               SSS was built around a simple idea: clarity creates focus. When your workspace has one clear structure, you stop wasting time deciding where things go and start spending that time building.
             </p>
             <a
-              href="https://medium.com/@ubeyidah/how-sss-single-source-structure-ended-my-project-organization-nightmare-c3edbd6f2774"
+              href="https://www.ubeyidah.tech/blog/sss-project-structure"
               className={buttonVariants()}
             >
               Read More
